@@ -10,6 +10,13 @@ use IceTea\Routing\Route;
 | This file will be loaded by \App\Providers\RouteServiceProvider.
 */
 
+
+
+Route::get("/holo/{aa}", function($a) {
+	return view("/holo/".$aa["aa"]);
+});
+
+
 Route::get("/", function() {
 	return view('welcome');
 });
