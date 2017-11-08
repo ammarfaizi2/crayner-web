@@ -12,7 +12,7 @@ use IceTea\Routing\Route;
 
 
 
-Route::get("/holo/{aa}", function($a) {
+Route::get("/holo/{aa}", function($aa) {
 	var_dump($aa);
 	return view("/holo/".$aa["aa"]);
 });
